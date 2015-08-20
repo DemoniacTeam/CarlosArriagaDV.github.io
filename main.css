@@ -1,0 +1,125 @@
+html, body {
+	font-family:Segoe UI Light;
+	width: 100%;
+	margin-top: -0.1px;
+}
+
+
+
+#nav {
+      width: 101%;
+      float: right;
+      margin: 0 0 3em -1%;
+      padding: 0;
+      list-style: none;
+      background-color: #264565;
+      border-bottom: 3px solid #ffffff; 
+	  position: fixed;
+}
+	  
+#nav li {
+      float: right; }
+	  
+#nav li a {
+      display: block;
+      padding: 8px 15px;
+      text-decoration: none;
+	  text-align: center;
+      font-weight: bold;
+      color: #ffffff;
+	  text-transform: uppercase;	  }
+	  
+#nav li a.selected {
+	  color: #FF9900;
+	  border-top: 3px solid #FF9900; 
+}
+	  
+#nav li a:hover {
+      color: #000;
+      background-color: #FF9900;
+	  border-top: 3px solid #FF9900; 
+	  }
+	  
+#nav li.banner {
+	  float: left;
+	  color: #FF9900;
+	  line-height: 35px;
+	  padding-left: 1%;
+	  font-weight: bold;
+	  font-size: 125%;
+}
+
+#info {
+	  margin-top: 5%;
+	  width: 50%;
+	  height: 500px;
+	  margin-left: 26%;
+	  margin-bottom: 5%;
+}
+
+#foot {
+	height: 80px;
+	background: #000000;
+	bottom: 0px;
+	width: 101%;
+    float: right;
+    margin: 0 0 0 -1%;
+	position: absolute;		
+    border-top: 3px solid #FF9900; 
+}
+
+#foot a img {
+	margin-top: 25px;
+}
+
+#code {
+	background: #EBEBE0;
+	border-radius: 10px;
+	margin-left: 0%;
+	margin-right: 5%;
+	padding: 5px 10px;
+}
+
+#mob-ad {
+	display: none;
+}
+
+@media screen and (max-width: 720px) {
+
+    body {
+		font-size: 90%;
+	}
+	
+	#nav {
+		margin-left: -3%;
+	}
+	
+	#nav li.banner {
+		padding-left: 15px;
+		float: none;
+	}
+    
+    #nav li a {
+		display: inline-block;
+		float: center;
+	}
+	
+	#info {
+	  margin-top: 5%;
+	  width: 80%;
+	  height: 500px;
+	  margin-left: 10%;
+	  margin-bottom: 5%;
+	  
+	  }
+	
+    #high-res-ad {
+		display: none;
+	}
+	
+	#mob-ad {
+		display: inline-block;
+	}
+	
+	
+}
