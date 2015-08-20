@@ -7,7 +7,7 @@ html, body {
 
 
 #nav {
-      width: 101%;
+      width: 102%;
       float: right;
       margin: 0 0 3em -1%;
       padding: 0;
@@ -22,7 +22,7 @@ html, body {
 	  
 #nav li a {
       display: block;
-      padding: 8px 15px;
+      padding: 6px 10px;
       text-decoration: none;
 	  text-align: center;
       font-weight: bold;
@@ -46,7 +46,7 @@ html, body {
 	  line-height: 35px;
 	  padding-left: 1%;
 	  font-weight: bold;
-	  font-size: 125%;
+	  font-size: 160%;
 }
 
 #info {
