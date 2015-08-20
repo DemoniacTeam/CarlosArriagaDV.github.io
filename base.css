@@ -12,8 +12,8 @@ html, body {
       margin: 0 0 3em -1%;
       padding: 0;
       list-style: none;
-      background-color: #5a423e;
-      border-bottom: 3px solid #537EA9; 
+      background-color: #2d7bc9;
+      border-bottom: 3px solid #fdff00; 
 	  position: fixed;
 }
 	  
@@ -30,19 +30,19 @@ html, body {
 	  text-transform: uppercase;	  }
 	  
 #nav li a.selected {
-	  color: #000000;
-	  border-top: 3px solid #FF9900; 
+	  color: #ffffff;
+	  border-top: 3px solid #2d7bc9; 
 }
 	  
 #nav li a:hover {
       color: #000;
-      background-color: #FFFFFF;
-	  border-top: 3px solid #FF9900; 
+      background-color: #2d7bc9;
+	  border-top: 3px solid #000000; 
 	  }
 	  
 #nav li.banner {
 	  float: left;
-	  color: #FFFFFF;
+	  color: #ffffff;
 	  line-height: 35px;
 	  padding-left: 1%;
 	  font-weight: bold;
@@ -61,7 +61,7 @@ html, body {
 	height: 80px;
 	background: #000000;
 	bottom: 0px;
-	width: 101%;
+	width: 100%;
     float: right;
     margin: 0 0 0 -1%;
 	position: absolute;		
