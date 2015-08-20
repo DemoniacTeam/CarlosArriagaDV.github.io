@@ -13,7 +13,7 @@ html, body {
       padding: 0;
       list-style: none;
       background-color: #5a423e;
-      border-bottom: 3px solid #ffffff; 
+      border-bottom: 3px solid #537EA9; 
 	  position: fixed;
 }
 	  
@@ -30,19 +30,19 @@ html, body {
 	  text-transform: uppercase;	  }
 	  
 #nav li a.selected {
-	  color: #FF9900;
+	  color: #000000;
 	  border-top: 3px solid #FF9900; 
 }
 	  
 #nav li a:hover {
       color: #000;
-      background-color: #FF9900;
+      background-color: #FFFFFF;
 	  border-top: 3px solid #FF9900; 
 	  }
 	  
 #nav li.banner {
 	  float: left;
-	  color: #FF9900;
+	  color: #FFFFFF;
 	  line-height: 35px;
 	  padding-left: 1%;
 	  font-weight: bold;
