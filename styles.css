@@ -29,7 +29,7 @@
 }
 #cssmenu {
   font-family: Montserrat, sans-serif;
-  background: #333333;
+  background: #0997ee;
 }
 #cssmenu > ul > li {
   float: left;
@@ -49,12 +49,12 @@
   float: right;
 }
 #cssmenu > ul > li > a {
-  padding: 17px;
-  font-size: 12px;
+  padding: 18px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #dddddd;
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 600;
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
@@ -70,7 +70,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #ffffff;
   content: '';
 }
 #cssmenu > ul > li.has-sub > a:before {
@@ -80,7 +80,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #ffffff;
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -131,9 +131,9 @@
   width: 170px;
   font-size: 12px;
   text-decoration: none;
-  color: #dddddd;
-  font-weight: 400;
-  background: #333333;
+  color: #ffffff;
+  font-weight: 500;
+  background: #31602d;
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
