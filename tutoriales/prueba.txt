@@ -1,0 +1,143 @@
+Desbloquear oficialmente el Bootloader del Moto G 2013 + Fix Logo + Recovery + Root (TODO EN UNO) (SCRIPTS AUTOMÁTICOS) (Windows&Linux)
+
+
+
+
+He diseñado 3 scripts totalmente automatizados para desbloquear el bootloader oficialmente, quitar el logo del "Warning Bootloader Unlocked", instalar un Custom Recovery y Rootear. También he añadido una herramienta para rebloquear el Bootloader en caso de necesitarlo. Es tan sencillo como ejecutar los scripts por orden y seguir las instrucciones que nos va dando el script, por lo tanto no voy a poner ni los pasos ya que hasta un niño de 5 años podría hacerlo. 
+
+En este pack de herramientas está absolutamente todo lo necesario (drivers, adb, fastboot, etc), así que no necesitas salir del hilo para descargar nada.
+
+
+AVISO: Es mi deber avisarte de que, según Motorola, desbloquear el Bootloader anula la garantía. A partir de aquí, actúa bajo tu propia responsabilidad, es decir, es tu decisión seguir adelante o abandonar.
+
+
+
+
+
+REQUISITOS PREVIOS: 
+
+-Antes de comenzar el tutorial es obligatorio desactivar el antivirus, ya que al ser scripts caseros, el antivirus puede detectarlos como virus pero en realidad no lo son, son falsos positivos (podéis ver el código de los scripts con el bloc de notas por si así os quedáis más tranquilos), de lo contrario el antivirus borrará o bloqueará archivos y no os funcionará el tutorial.
+
+-Antes de abrir cualquier script, el teléfono debe estar encendido normal, en ningún modo especial.
+
+
+
+
+
+
+0. EMPEZAMOS:
+
+0.1 Simplemente debemos descargarnos esta herramienta: LINK (Contraseña del rar: Alkalinorap) y la descomprimimos en el Escritorio o en cualquier otro lugar accesible. 
+
+
+
+1. Desbloquear el Bootloader
+
+1.1 
+
+En Windows: Abrimos el script 1.unlock-bootloader-moto-windows.bat con doble click (nunca como Administrador) y seguimos las instrucciones al pie de la letra.
+
+En linux: Abrimos una terminal, nos desplazamos hasta la carpeta de la herramienta con "cd" y le damos permisos de ejecución al script 1.unlock-bootloader-moto-linux.sh con el comando "chmod +x 1.unlock-bootloader-moto-linux.sh", después lo ejecutamos con el comando "./1.unlock-bootloader-moto-linux.sh"
+
+IMPORTANTE: Recuerda que al desbloquear el Bootloader se hace un factory reset (reseteo de fábrica), por lo que antes de proceder, te recomiendo poner a salvo tus archivos si no quieres perderlos.
+
+
+2. Reparar Logo "Warning Bootloader Unlocked"
+
+2.1
+
+En Windows: Abrimos el script 2.fixlogo-moto-windows.bat con doble click (nunca como Administrador) y seguimos las instrucciones al pie de la letra.
+
+En Linux: Abrimos una terminal, nos desplazamos hasta la carpeta de la herramienta con "cd" y le damos permisos de ejecución al script 2.fixlogo-moto-linux.sh con el comando "chmod +x 2.fixlogo-moto-linux.sh", después lo ejecutamos con el comando "./2.fixlogo-moto-linux.sh"
+
+
+3. Instalar un Custom Recovery y Rootear
+
+IMPORTANTE: El método de rooteo es compatible con KitKat y Lollipop, pero en Lollipop aún no es del todo consistente, por lo que es posible que se produzcan comportamientos extraños.
+
+3.1 
+
+En Windows: Abrimos el script 3.install-recovery-and-root-moto-windows.bat con doble click (nunca como Administrador) y seguimos las instrucciones al pie de la letra.
+
+En Linux: Abrimos una terminal, nos desplazamos hasta la carpeta de la herramienta con "cd" y le damos permisos de ejecución al script 3.install-recovery-and-root-moto-linux.sh con el comando "chmod +x 3.install-recovery-and-root-moto-linux.sh", después lo ejecutamos con el comando "./3.install-recovery-and-root-moto-linux.sh"
+
+
+3.2 Cuando el script nos lo indique, descargamos la versión más reciente en formato .img de uno de estos Custom Recoveries (el que queramos, es cuestión de gustos) y seguimos las instrucciones del script:
+
+
+TWRP: http://techerrata.com/browse/twrp2/xt1032 (XT1028, XT1031, XT1032, XT1033, XT1034)
+
+PhilZ Touch CWM: https://goo.im/devs/philz_touch/CWM_...dition/falcon/ (Compatible con XT1028, XT1031, XT1032, XT1033, XT1034)
+
+CWM: http://download2.clockworkmod.com/re...4.7-falcon.img (Sólo para XT1032) 
+
+CWM Touch: http://download2.clockworkmod.com/re...4.7-falcon.img (Sólo para XT1032)
+
+
+
+
+
+
+
+4. Rebloquear el Bootloader
+
+
+4.1 Nos descargamos esta herramienta: LINK (Contraseña del rar: Alkalinorap) y la extraemos en el Escritorio.
+
+
+En Windows: Abrimos el script relock_bootloader-moto-windows.bat con doble click (nunca como Administrador) y seguimos las instrucciones al pie de la letra.
+
+En Linux: Abrimos una terminal, nos desplazamos hasta la carpeta de la herramienta con "cd" y le damos permisos de ejecución al script relock_bootloader-moto-linux.sh con el comando "chmod +x relock_bootloader-moto-linux.sh", después lo ejecutamos con el comando "./relock_bootloader-moto-linux.sh"
+
+
+
+IMPORTANTE: Utilizar esta herramienta sólo en caso de necesitar rebloquearlo por razones contundentes, no utilizarlo a la ligera. Recuerda que para rebloquear el Bootloader es necesario descargar un firmware oficial, ya que el proceso del rebloqueo exige flashearlo, por lo que antes de proceder, te recomiendo poner a salvo tus datos si no quieres perderlos. El rebloqueo del Bootloader dejará el Bootloader totalmente cerrado, tal y como estaba antes de desbloquearlo, pero quedará constancia de que estuvo desbloqueado (Status Code 2). Aún no hay método para eliminar esta evidencia.
+
+
+
+
+
+
+NOTA: El motivo de que en los scripts de Windows no haya ni una sola tilde, no es porque sea un inepto ortográficamente hablando, sino porque es bien sabido que los caracteres especiales suelen dar problemas, sobre todo en lenguaje batch.
+
+NOTA 2: Se ha confirmado que funciona en Windows XP, Windows 7, Windows 8 y Windows 8.1 y en todas distribuciones basadas en Debian, no puedo dar garantía de que funcione con otras ediciones u otros sistemas operativos ya que no lo he probado. Si os funciona en otro, comentadlo y lo añadiré a esta nota.
+
+NOTA 3: La razón de que en Windows haya que ejecutar los scripts con doble click en vez de como administrador, es porque si lo ejecutamos como administrador, lanzará el cmd desde %system32% y por lo tanto no localizará los archivos de la carpeta.
+
+NOTA 4: Por supuesto, no me responsabilizo de ningún tipo de daño que pueda sufrir vuestro terminal a causa de esta guía, aunque es prácticamente imposible que se dañe con ninguno de los elementos comprendidos en ella.
+
+
+
+
+FAQ:
+
+P: = Pregunta
+R: = Respuesta
+
+
+P: Se me queda en el mensaje "waiting for device..." y no pasa de ahí.
+R: Como bien lees, está diciéndote que está esperando al dispositivo, porque no le detecta, tendrás que investigar qué es lo que le impide la detección, o tienes los drivers mal instalados, o no lo has puesto en modo fastboot, o tienes un virus en el PC, o tu teléfono o tu PC tienen problemas en los puertos USB, en fin, puede ser por mil cosas distintas y de momento no soy adivino. Si no descubres el fallo, formatea y reinstala Windows o prueba en otro PC o haz una máquina virtual.
+
+P: No me entra en modo fastboot.
+R: Estás realizando mal la combinación o no lo haces con el teléfono apagado. Es con VOL- y POWER a la vez con el teléfono apagado durante unos pocos segundos y sueltas.
+
+P: ¿Hace falta activar la depuración USB para realizar este tutorial?
+R: Es totalmente indiferente que la tengas activada o no, ya que Android ni siquiera existe para fastboot.
+
+P: ¿Podré actualizar por OTA después de desbloquear el Bootloader?
+R: Tener el Bootloader desbloqueado en sí no supone problema para esto, pero para actualizar correctamente por OTA deben cumplirse dos condiciones: Tener instalado el recovery stock (original) y no haber modificado /system. Si has modificado /system debes flashear un firmware oficial de Motorola para restaurar el sistema original. Si sólo has cambiado el recovery pero no has tocado /system (caso improbable y sin sentido), con flashear el recovery stock bastaría para poder actualizar por OTA. Después de actualizar ya puedes volver a rootear o a cambiar el recovery si quieres.
+
+P: ¿Cómo puedo actualizar el recovery o instalar otro, ya sea custom o stock?
+R: Debes meter el nuevo recovery en la carpeta recovery de la herramienta y ejecutar sólo el script 3 ignorando lo del root y el SuperSU. El anterior se sobreescribirá.
+
+P: ¿Si rebloqueo el Bootloader recupero la garantía?
+R: En teoría no porque aunque lo rebloquees queda constancia de que alguna vez lo abriste (en fastboot sale device LOCKED status code: 2), pero el tema de la garantía es algo relativo, ya que yo mismo he devuelto un terminal con el Bootloader rebloqueado y no he tenido ningún problema. Incluso he visto casos de gente que lo ha enviado a garantía con el Bootloader desbloqueado y ni lo han mirado, lo han reparado y ya está, que es lo que suelen hacer en la mayoría de los casos.
+
+P: ¿Qué ROM me recomiendas?
+R: Por favor, no ensuciéis el hilo con preguntas de este tipo, para eso está el foro con miles de post donde podéis ver lo que opinan los usuarios de las ROMS, y si no os satisface, abrís una consulta nueva, pero en este hilo no.
+
+P: No me funciona el tutorial
+R: Si no das más detalles, deja que vaya a por mi bola de cristal (ironía mode on).
+
+P: ¿Con esto se libera el móvil para poner SIM de otros operadores?
+R: No, una cosa es desbloquear el Bootloader, que sirve principalmente para poder modificar el software del teléfono, y otra es desbloquear el SIMLock, o lo que es lo mismo, liberar la red del teléfono para poder operar con tarjetas SIM de otros operadores. Son dos cosas totalmente distintas y obviamente este tutorial no sirve para liberar 
